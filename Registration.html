@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <title>Registration page</title>
+    <style>
+       form{
+border-top: 5px solid rgb(186, 3, 231);
+position: absolute;
+top: 25%;
+left: 35%;
+background-color: white;
+padding: 25px;
+box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+}
+form h1{
+  text-transform: uppercase;
+  color:  rgb(186, 3, 231);
+  font-size: 22px;
+  text-align: center;
+
+}
+form input{
+  padding: 10px 0;
+}
+form input[type="submit"]{
+  background-color:rgb(186, 3, 231);
+  box-sizing: border-box;
+  border:none;
+  cursor: pointer;
+  color: #fff;
+  width: 100%;
+
+}
+form i{
+  color: rgb(186, 3, 231);
+  padding: 5px;
+}
+
+     
+    </style>
+</head>
+<body>
+  <div class="top">
+    <img src="images/facebook.png" alt="img" width="100px" height="100px">
+    <div class="title" ><h1>MY Website</h1></div>
+    <div class="time"><h3>Sunday, 14 Feb 2016</h3><input type="text" placeholder="search here"></div>
+
+</div>
+<div class="nav">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Form</a></li>
+        <li><a href="table.html">Table</a></li>
+        <li><a href="NewsPortal.html">New Portal</a></li>
+        <li><a href="img.html">Image</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+    </ul>
+    
+
+</div>
+    <div class="content">
+
+        <form>
+          <h1>registration Form</h1><br>
+          <div> <i class="fa fa-user "></i><input type="text" required placeholder="First Name">
+          <span><input type="text" required placeholder="Last Name"></span> 
+          <br><br></div>     
+            <div><i class="fa fa-envelope email "></i><input type="email" required placeholder="Email"><br><br> </div> 
+          <div><i class="fa fa-lock lock"></i><input type="Password" required placeholder="password"><br><br></div>
+          <div><i class="fa fa-lock lock"></i><input type="Password" required placeholder="confirm password"></div><br><br>
+          
+          <div><input type="radio" required name="a"><label>Male</label>
+          <input type="radio" required name="a"><label>Female</label><br><br></div>
+          <div><input type="checkbox" required><label>I agree the terms and condition</label><br><br></div>
+          <div>
+              <select>
+                  <option>Select a country</option>
+                  <option>America</option>
+                  <option>Bangladesh</option>
+                  <option>Canada</option>
+                  <option>Etly</option>
+              </select>
+          </div><br><br>
+          <div> <input type="submit" value="Register" required><br></div>
+            
+        </form>
+</body>
+</html>

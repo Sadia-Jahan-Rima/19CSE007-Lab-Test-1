@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <title>Contact page</title>
+    <style>
+        form{
+
+position: absolute;
+top: 30%;
+left: 40%;
+padding: 30px;
+box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+}
+form h1{
+  padding: 5px;
+  text-transform: uppercase;
+  color:  rgb(245, 8, 87);
+  font-size: 25px;
+  border-left: 2px solid rgb(245, 8, 87);
+}
+form input,textarea{
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  color: aliceblue;
+  padding: 10px 0;
+  width: 100%;
+  color: #000;
+
+}
+label{
+  font-family: 'Times New Roman', Times, serif;
+}
+form input:focus,form textarea:focus,
+form input:valid,form textarea:valid
+{
+  border-bottom: 1px solid rgb(245, 8, 87);
+}
+textarea{
+ background-color: rgba(255, 255, 255, 0.856);
+  height: 40px;
+
+}
+form input[type="submit"]{
+  background-color: rgb(245, 8, 87);
+  box-sizing: border-box;
+  border:none;
+  cursor: pointer;
+  color: #fff;
+
+}
+form label{
+position: relative;
+color: rgba(0, 0, 0, 0.274);
+transition: 0.5s;
+top: -22px;
+}
+  form div input:focus~label,
+  form div input:valid~label{
+  
+    color: rgb(245, 8, 87);
+   font-weight: bold;
+   top: -50px;
+
+    }
+    form div textarea:focus~label,
+    form div textarea:valid~label{
+      color: rgba(255, 255, 255, 0.856);
+    }
+      
+    </style>
+</head>
+<body>
+  <div class="top">
+    <img src="images/facebook.png" alt="img" width="100px" height="100px">
+    <div class="title" ><h1>MY Website</h1></div>
+    <div class="time"><h3>Sunday, 14 Feb 2016</h3><input type="text" placeholder="search here"></div>
+
+</div>
+<div class="nav">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Form</a></li>
+        <li><a href="table.html">Table</a></li>
+        <li><a href="NewsPortal.html">New Portal</a></li>
+        <li><a href="img.html">Image</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+    </ul>
+    
+
+</div> 
+    <div class="content">
+
+        <form>
+          <h1>Contact us</h1><br>
+          <div> <input type="text" required><label>Full name</label><br><br></div>     
+            <div><input type="email" required><label>Email Address</label><br><br>    </div> 
+          <div><textarea required></textarea><label>Type your message here...</label><br><br></div>
+      <div>  <input type="submit" value="send" required><br></div>
+            
+        </form>
+      </div>
+</body>
+</html>
